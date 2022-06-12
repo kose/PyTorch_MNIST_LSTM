@@ -16,5 +16,6 @@ MINISTで適用すると、n = 28, N = 10 で、ハイパーパラメータと�
 
 ## Reference
 
+- [Basic MNIST Exsample](https://github.com/pytorch/examples/tree/main/mnist)
 - [今度こそわかるぞRNN, LSTM編](https://qiita.com/kazukiii/items/df809d6cd5d7d1f57be3)
 - [【PyTorch】MNISTの分類問題をいろんなモデルで実装する【全結合層・CNN・RNN・LSTM】](https://lotti.info/mnist-dence-cnn-rnn-lstm/)
