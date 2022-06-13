@@ -174,10 +174,12 @@ def main():
         except:
             device = torch.device("cuda" if use_cuda else "cpu")
         model = CNN().to(device)
+        filename = "mnist_cnn.pt"
     else:
         print("use LSTM Network")
         device = torch.device("cuda" if use_cuda else "cpu")
         model = LSTM().to(device)
+        filename = "mnist_lstm.pt"
 
     optimizer = optim.Adadelta(model.parameters(), lr=args.lr)
 
@@ -188,7 +190,7 @@ def main():
         scheduler.step()
 
     if args.save_model:
-        torch.save(model.state_dict(), "mnist_cnn.pt")
+        torch.save(model.state_dict(), filename)
 
 
 if __name__ == '__main__':
